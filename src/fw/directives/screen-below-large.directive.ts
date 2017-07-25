@@ -13,7 +13,6 @@ export class ScreenBelowLarge implements OnDestroy {
                 private screenService: ScreenService) {
 
     this.screenSubscription = screenService.resize$.subscribe(() => this.onResize());
-
   }
 
   @Input()
