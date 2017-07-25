@@ -6,13 +6,14 @@ import {TitleBarComponent} from './title-bar/title-bar.component';
 import {TopBarComponent} from './top-bar/top-bar.component';
 import {FrameworkConfigService} from './services/framework-config.service';
 import {StatusBarComponent} from './status-bar/status-bar.component';
+import {ScreenService} from './services/sceen.service';
 
 @NgModule({
   imports: [CommonModule],
   declarations: [
     FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent, StatusBarComponent
   ],
-  providers: [FrameworkConfigService],
+  providers: [FrameworkConfigService, ScreenService],
   exports: [FrameworkBodyComponent]
 })
 export class FwModule {}
