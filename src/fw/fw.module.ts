@@ -11,6 +11,7 @@ import {ScreenLarge} from './directives/screen-large.directive';
 import {ScreenBelowLarge} from './directives/screen-below-large.directive';
 import {MenuService} from './services/menu.service';
 import {MenuComponent} from './menus/menu/menu.component';
+import {MenuItemComponent} from './menus/menu-item/menu-item.component';
 
 @NgModule({
   imports: [CommonModule],
@@ -22,7 +23,8 @@ import {MenuComponent} from './menus/menu/menu.component';
     StatusBarComponent,
     ScreenLarge,
     ScreenBelowLarge,
-    MenuComponent
+    MenuComponent,
+    MenuItemComponent
   ],
   providers: [
     FrameworkConfigService, ScreenService, MenuService
