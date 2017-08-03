@@ -1,5 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {RouterModule} from '@angular/router';
+
 import {FrameworkBodyComponent} from './framework-body/framework-body.component';
 import {ContentComponent} from './content/content.component';
 import {TitleBarComponent} from './title-bar/title-bar.component';
@@ -14,7 +16,9 @@ import {MenuComponent} from './menus/menu/menu.component';
 import {MenuItemComponent} from './menus/menu-item/menu-item.component';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [
+    CommonModule, RouterModule
+  ],
   declarations: [
     FrameworkBodyComponent,
     ContentComponent,
