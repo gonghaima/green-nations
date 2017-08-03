@@ -9,13 +9,22 @@ import {StatusBarComponent} from './status-bar/status-bar.component';
 import {ScreenService} from './services/screen.service';
 import {ScreenLarge} from './directives/screen-large.directive';
 import {ScreenBelowLarge} from './directives/screen-below-large.directive';
+import {MenuService} from './services/menu.service';
 
 @NgModule({
   imports: [CommonModule],
   declarations: [
-    FrameworkBodyComponent, ContentComponent, TitleBarComponent, TopBarComponent, StatusBarComponent, ScreenLarge, ScreenBelowLarge
+    FrameworkBodyComponent,
+    ContentComponent,
+    TitleBarComponent,
+    TopBarComponent,
+    StatusBarComponent,
+    ScreenLarge,
+    ScreenBelowLarge
   ],
-  providers: [FrameworkConfigService, ScreenService],
+  providers: [
+    FrameworkConfigService, ScreenService, MenuService
+  ],
   exports: [FrameworkBodyComponent]
 })
 export class FwModule {}
