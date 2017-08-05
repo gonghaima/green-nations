@@ -3,6 +3,8 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {RouterModule} from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import {AppComponent} from './app.component';
 import {FwModule} from '../fw/fw.module';
@@ -18,7 +20,7 @@ import { CountryMaintComponent } from './country-maint/country-maint.component';
     AppComponent, DashboardComponent, SettingsComponent, CountryDetailComponent, CountryListComponent, CountryMaintComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpModule, FwModule, RouterModule.forRoot(appRoutes)
+    BrowserModule, FormsModule, HttpModule, FwModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
