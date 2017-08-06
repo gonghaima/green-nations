@@ -1,4 +1,4 @@
-<div class="menu-item" [ngClass]="{'vertical-menu' : menuService.isVertical, 'router-link-active': isActiveRoute}" (click)="menuService.showingLeftSideMenu=false">
+<div class="menu-item" [ngClass]="{'vertical-menu' : menuService.isVertical, 'router-link-active': isActiveRoute}">
   <span class="glyphicon {{item.icon}}"></span>
   <span>{{item.text.toUpperCase()}}</span>
   <span *ngIf="item.submenu && !parentIsPopup && !menuService.isVertical" 
