@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 import {FrameworkBodyComponent} from './framework-body/framework-body.component';
 import {ContentComponent} from './content/content.component';
@@ -15,10 +16,11 @@ import {MenuService} from './services/menu.service';
 import {MenuComponent} from './menus/menu/menu.component';
 import {MenuItemComponent} from './menus/menu-item/menu-item.component';
 import {PopupMenuComponent} from './menus/popup-menu/popup-menu.component';
+import {SignInComponent} from './users/sign-in/sign-in.component';
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule
+    CommonModule, RouterModule, FormsModule
   ],
   declarations: [
     FrameworkBodyComponent,
@@ -30,7 +32,8 @@ import {PopupMenuComponent} from './menus/popup-menu/popup-menu.component';
     ScreenBelowLarge,
     MenuComponent,
     MenuItemComponent,
-    PopupMenuComponent
+    PopupMenuComponent,
+    SignInComponent
   ],
   providers: [
     FrameworkConfigService, ScreenService, MenuService
