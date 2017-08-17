@@ -54,7 +54,9 @@ import { PanelComponent } from './panels/panel/panel.component';
   exports: [
     FrameworkBodyComponent,
     DynamicFormComponent,
-    PanelComponent
+    PanelComponent,
+    ScreenLarge,
+    ScreenBelowLarge
   ]
 })
 export class FwModule { }

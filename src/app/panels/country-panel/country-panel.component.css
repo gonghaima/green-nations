@@ -6,6 +6,15 @@
     display: flex;
 }
 
+.group-small {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-group-small {
+    display: flex;
+}
+
 .index {
     display: flex;
     width: 80px;
@@ -16,9 +25,21 @@
     justify-content: center;
 }
 
+.index-small {
+    width: 50px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    font-size: 32px;
+}
+
 .country-image {
     width: 240px;
     margin: 14px;
+}
+
+.country-image-small {
+    width: 100%;
 }
 
 .country-name {
@@ -30,6 +51,12 @@
     justify-content: center;
 }
 
+.country-name-small {
+    font-size: 34px;
+    color: #555;
+    margin-left: 15px;
+}
+
 .epi-index {
     display: flex;
     font-size: 44px;
@@ -38,4 +65,11 @@
     background-color: green;
     align-items: center;
     justify-content: center;
+}
+
+.epi-index-small {
+    font-size: 44px;
+    color: white;
+    background-color: green;
+    text-align: center;
 }
