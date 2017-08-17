@@ -19,10 +19,11 @@ import { UserService } from './services/user.service';
 import { UserApi } from '../fw/users/user-api';
 import { AuthGuard } from './services/auth-guard.service';
 import { AppDataService } from './services/app-data.service';
+import { CountryPanelComponent } from './panels/country-panel/country-panel.component';
 
 @NgModule({
   declarations: [
-    AppComponent, DashboardComponent, SettingsComponent, CountryDetailComponent, CountryListComponent, CountryMaintComponent, AuthenticatedUserComponent
+    AppComponent, DashboardComponent, SettingsComponent, CountryDetailComponent, CountryListComponent, CountryMaintComponent, AuthenticatedUserComponent, CountryPanelComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule, FwModule, RouterModule.forRoot(appRoutes), BrowserAnimationsModule
